@@ -138,7 +138,7 @@ namespace WeMo_Switch
 
             //Display all the book titles.
             XmlNodeList elemList = doc.GetElementsByTagName("BinaryState");
-            Console.WriteLine(elemList[0].InnerXml);
+            //Console.WriteLine(elemList[0].InnerXml);
             return (string)elemList[0].InnerXml;
  
         }
@@ -178,9 +178,9 @@ namespace WeMo_Switch
         }
 
         private void Timer_Status_Tick(object sender, EventArgs e)
-        {           
-            Console.WriteLine("Checking WeMo Status...");
+        {               
             lblStatus.Text = getStatus();
+            Console.WriteLine("WeMo Status: " + WeMo_Status);
         }
 
     }
