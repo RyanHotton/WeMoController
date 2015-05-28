@@ -1,0 +1,10 @@
+E:\Code\experiments\WeMo Switch\WeMo Switch\bin\Debug\WeMo Switch.exe.config
+E:\Code\experiments\WeMo Switch\WeMo Switch\bin\Debug\WeMo Switch.exe
+E:\Code\experiments\WeMo Switch\WeMo Switch\bin\Debug\WeMo Switch.pdb
+E:\Code\experiments\WeMo Switch\WeMo Switch\obj\Debug\WeMo Switch.csprojResolveAssemblyReference.cache
+E:\Code\experiments\WeMo Switch\WeMo Switch\obj\Debug\WeMo_Switch.Form1.resources
+E:\Code\experiments\WeMo Switch\WeMo Switch\obj\Debug\WeMo_Switch.Properties.Resources.resources
+E:\Code\experiments\WeMo Switch\WeMo Switch\obj\Debug\WeMo Switch.csproj.GenerateResource.Cache
+E:\Code\experiments\WeMo Switch\WeMo Switch\obj\Debug\WeMo Switch.exe
+E:\Code\experiments\WeMo Switch\WeMo Switch\obj\Debug\WeMo Switch.pdb
+E:\Code\experiments\WeMo Switch\WeMo Switch\obj\Debug\WeMo_Switch.StartForm.resources
