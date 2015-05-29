@@ -22,5 +22,5 @@ Video Source: https://youtu.be/ifzmJFdvNEE
 ##### Contact:
 Contact information will be posted in the future.
 
-###### Team:
-Aliases: LordArsenic and BEANIOT
+##### Team:
+Ryan and Ben
