@@ -32,7 +32,8 @@ namespace WeMo_Switch
         {
             InitializeComponent(); ;
             baseUrl = ipAddr;
-
+            Console.WriteLine(baseUrl + ":" + port + "/icon.jpg");
+            getWeMoIcon();
             try
             {
                 lblStatus.Text = getStatus();
@@ -44,6 +45,18 @@ namespace WeMo_Switch
                 this.Close();
             }
            
+        }
+
+        private void getWeMoIcon()
+        {
+            string iconURL = "http://" + baseUrl + ":" + port + "/icon.jpg";
+            var request = WebRequest.Create(iconURL);
+
+            using (var response = request.GetResponse())
+            using (var stream = response.GetResponseStream())
+            {
+                picIcon.Image = Bitmap.FromStream(stream);
+            }
         }
 
         private string getStatus()
@@ -181,6 +194,11 @@ namespace WeMo_Switch
         {               
             lblStatus.Text = getStatus();
             Console.WriteLine("WeMo Status: " + WeMo_Status);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
 
     }
