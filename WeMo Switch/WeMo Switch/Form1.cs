@@ -43,13 +43,13 @@ namespace WeMo_Switch
 
         private void btnOn_Click(object sender, EventArgs e)
         {
-            myWeMo.SendCommand(myWeMo.getCommandOn());
+            myWeMo.SendPowerCommand(myWeMo.getCommandOn());
             lblStatus.Text = myWeMo.getStatus(ref btnOff, ref btnOn);
         }
 
         private void btnOff_Click(object sender, EventArgs e)
         {
-            myWeMo.SendCommand(myWeMo.getCommandOff());
+            myWeMo.SendPowerCommand(myWeMo.getCommandOff());
             lblStatus.Text = myWeMo.getStatus(ref btnOff, ref btnOn);
         }
 

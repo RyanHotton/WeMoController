@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WeMo_Switch.Classes;
 
 namespace WeMo_Switch
 {
@@ -26,19 +27,35 @@ namespace WeMo_Switch
             this.Cursor = Cursors.WaitCursor;
             Form1 newForm = new Form1(ipAddr);
             this.Hide();
-            try {
+            try
+            {
                 newForm.ShowDialog();
             }
-            catch {
+            catch
+            {
 
             }
             this.Cursor = Cursors.Default;
             this.Show();
+
+            
         }
 
         private void StartForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            btnRefresh.Enabled = false;
+            //txtResults.Cursor = Cursors.WaitCursor;
+            LocateWeMo pingTest = new LocateWeMo();
+            pingTest.findAllDevices(ref txtResults);
+            btnRefresh.Enabled = true;
+            //txtResults.Cursor = Cursors.IBeam;
+            this.Cursor = Cursors.Default;
         }
     }
 }

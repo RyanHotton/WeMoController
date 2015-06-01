@@ -34,7 +34,54 @@ namespace WeMo_Switch.Classes
          * 
         */
 
-        public void SendCommand(string command)
+        public bool isWeMo(string IPAddr)
+        {
+            this.setBaseURL(IPAddr);
+            try
+            {
+                return this.checkWeMo();
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private bool checkWeMo()
+        {
+            string targetUrl = "http://" + this.baseURL + ":" + port + "/upnp/control/basicevent1";
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(targetUrl);
+            request.Method = "POST";
+            request.Headers.Add("SOAPAction", "\"urn:Belkin:service:basicevent:1#GetBinaryState\"");
+            request.ContentType = @"text/xml; charset=""utf-8""";
+            request.KeepAlive = false;
+            Byte[] bytes = UTF8Encoding.ASCII.GetBytes(COMMAND_GET);
+            request.ContentLength = bytes.Length;
+            using (Stream stream = request.GetRequestStream())
+            {
+                stream.Write(bytes, 0, bytes.Length);
+                stream.Close();
+                using (var response = (HttpWebResponse)request.GetResponse())
+                {
+                    using (var reader = new StreamReader(response.GetResponseStream()))
+                    {
+                        string result = reader.ReadToEnd(); // do something fun...
+                        string status = getStatusFromXML(result);
+                        if (status == "0" || status == "1")
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        public void SendPowerCommand(string command)
         {
             //
             //  Pull presentation URL from device and extract IP and PORT
