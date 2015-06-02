@@ -33,6 +33,7 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.txtResults = new System.Windows.Forms.TextBox();
+            this.progFind = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +50,7 @@
             // txtIPAddr
             // 
             this.txtIPAddr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIPAddr.Location = new System.Drawing.Point(12, 80);
+            this.txtIPAddr.Location = new System.Drawing.Point(12, 58);
             this.txtIPAddr.Name = "txtIPAddr";
             this.txtIPAddr.Size = new System.Drawing.Size(256, 22);
             this.txtIPAddr.TabIndex = 1;
@@ -58,7 +59,7 @@
             // btnSubmit
             // 
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(96, 106);
+            this.btnSubmit.Location = new System.Drawing.Point(96, 84);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnSubmit.TabIndex = 2;
@@ -68,12 +69,12 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.Location = new System.Drawing.Point(52, 135);
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(12, 109);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(155, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(256, 23);
             this.btnRefresh.TabIndex = 3;
-            this.btnRefresh.Text = "Refresh [Prototype]";
+            this.btnRefresh.Text = "Refresh [Prototype] - SUPER SLOW!";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -87,12 +88,20 @@
             this.txtResults.Size = new System.Drawing.Size(256, 198);
             this.txtResults.TabIndex = 4;
             // 
+            // progFind
+            // 
+            this.progFind.Location = new System.Drawing.Point(12, 135);
+            this.progFind.Name = "progFind";
+            this.progFind.Size = new System.Drawing.Size(256, 23);
+            this.progFind.TabIndex = 5;
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 374);
+            this.Controls.Add(this.progFind);
             this.Controls.Add(this.txtResults);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnSubmit);
@@ -120,5 +129,6 @@
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.TextBox txtResults;
+        private System.Windows.Forms.ProgressBar progFind;
     }
 }

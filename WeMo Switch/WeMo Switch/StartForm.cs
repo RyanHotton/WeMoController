@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using WeMo_Switch.Classes;
 
@@ -50,12 +50,18 @@ namespace WeMo_Switch
         {
             this.Cursor = Cursors.WaitCursor;
             btnRefresh.Enabled = false;
-            //txtResults.Cursor = Cursors.WaitCursor;
             LocateWeMo pingTest = new LocateWeMo();
-            pingTest.findAllDevices(ref txtResults);
+            int maxTimes = pingTest.getNumOfIPCombinations();
+            progFind.Maximum = maxTimes;
+            progFind.Minimum = 0;
+            progFind.Step = 1;            
+            Console.WriteLine("Combinations " + maxTimes.ToString());
+            pingTest.findAllDevices(ref txtResults, ref progFind);
             btnRefresh.Enabled = true;
-            //txtResults.Cursor = Cursors.IBeam;
             this.Cursor = Cursors.Default;
+            
         }
+
+       
     }
 }
