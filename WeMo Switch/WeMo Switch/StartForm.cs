@@ -51,11 +51,10 @@ namespace WeMo_Switch
             this.Cursor = Cursors.WaitCursor;
             btnRefresh.Enabled = false;
             LocateWeMo pingTest = new LocateWeMo();
-            int maxTimes = pingTest.getNumOfIPCombinations();
+            int maxTimes = 100; 
             progFind.Maximum = maxTimes;
             progFind.Minimum = 0;
-            progFind.Step = 1;            
-            Console.WriteLine("Combinations " + maxTimes.ToString());
+            progFind.Step = 1;
             pingTest.findAllDevices(ref txtResults, ref progFind);
             btnRefresh.Enabled = true;
             this.Cursor = Cursors.Default;
