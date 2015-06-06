@@ -1,6 +1,6 @@
 ﻿namespace WeMo_Switch
 {
-    partial class Form1
+    partial class ControllerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -103,7 +103,7 @@
             this.picIcon.TabIndex = 5;
             this.picIcon.TabStop = false;
             // 
-            // Form1
+            // ControllerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +118,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "ControllerForm";
             this.Text = "WeMo Controller";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();

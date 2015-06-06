@@ -18,14 +18,14 @@ using WeMo_Switch.Classes;
 
 namespace WeMo_Switch
 {
-    public partial class Form1 : Form
+    public partial class ControllerForm : Form
     {
         private Timer Timer_Status;
         private WeMo myWeMo = new WeMo();
 
-        public Form1(string ipAddr)
+        public ControllerForm(string ipAddr)
         {
-            InitializeComponent(); ;
+            InitializeComponent(); 
             myWeMo.setBaseURL(ipAddr);
             try
             {

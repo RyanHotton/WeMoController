@@ -25,7 +25,7 @@ namespace WeMo_Switch
         {
             ipAddr = txtIPAddr.Text;
             this.Cursor = Cursors.WaitCursor;
-            Form1 newForm = new Form1(ipAddr);
+            ControllerForm newForm = new ControllerForm(ipAddr);
             this.Hide();
             try
             {
