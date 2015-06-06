@@ -120,7 +120,7 @@
             this.MinimizeBox = false;
             this.Name = "ControllerForm";
             this.Text = "WeMo Controller";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.ControllerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -67,7 +67,7 @@ namespace WeMo_Switch
             Console.WriteLine("WeMo Status: " + myWeMo.getWeMo_Status());
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void ControllerForm_Load(object sender, EventArgs e)
         {
             
         }
