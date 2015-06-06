@@ -23,4 +23,5 @@ Video Source: https://youtu.be/ifzmJFdvNEE
 Contact information will be posted in the future.
 
 ##### Team:
-Ryan and Ben
+Ryan - (LordArsenic)
+More team members coming...
