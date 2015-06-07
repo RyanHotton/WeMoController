@@ -88,6 +88,7 @@
             this.txtResults.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtResults.Size = new System.Drawing.Size(256, 198);
             this.txtResults.TabIndex = 4;
+            this.txtResults.TextChanged += new System.EventHandler(this.txtResults_TextChanged);
             // 
             // progFind
             // 

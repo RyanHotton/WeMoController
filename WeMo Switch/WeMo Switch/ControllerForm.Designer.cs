@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.picIcon = new System.Windows.Forms.PictureBox();
+            this.chkDisable = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,12 +105,24 @@
             this.picIcon.TabIndex = 5;
             this.picIcon.TabStop = false;
             // 
+            // chkDisable
+            // 
+            this.chkDisable.AutoSize = true;
+            this.chkDisable.Location = new System.Drawing.Point(12, 92);
+            this.chkDisable.Name = "chkDisable";
+            this.chkDisable.Size = new System.Drawing.Size(61, 17);
+            this.chkDisable.TabIndex = 6;
+            this.chkDisable.Text = "Disable";
+            this.chkDisable.UseVisualStyleBackColor = true;
+            this.chkDisable.CheckedChanged += new System.EventHandler(this.chkDisable_CheckedChanged);
+            // 
             // ControllerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(284, 360);
+            this.Controls.Add(this.chkDisable);
             this.Controls.Add(this.picIcon);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label2);
@@ -137,6 +150,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.PictureBox picIcon;
+        private System.Windows.Forms.CheckBox chkDisable;
     }
 }
 

@@ -22,6 +22,7 @@ namespace WeMo_Switch
     {
         private Timer Timer_Status;
         private WeMo myWeMo = new WeMo();
+        private bool disableBool = false;
 
         public ControllerForm(string ipAddr)
         {
@@ -63,13 +64,29 @@ namespace WeMo_Switch
 
         private void Timer_Status_Tick(object sender, EventArgs e)
         {
-            lblStatus.Text = myWeMo.getStatus(ref btnOff, ref btnOn);
+            disableButtons();
             Console.WriteLine("WeMo Status: " + myWeMo.getWeMo_Status());
+        }
+
+        private void disableButtons()
+        {
+            lblStatus.Text = myWeMo.getStatus(ref btnOff, ref btnOn);
+            if (disableBool)
+            {
+                btnOff.Enabled = false;
+                btnOn.Enabled = false;
+            }
         }
 
         private void ControllerForm_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void chkDisable_CheckedChanged(object sender, EventArgs e)
+        {
+            disableBool = chkDisable.Checked;
+            disableButtons();
         }
 
     }

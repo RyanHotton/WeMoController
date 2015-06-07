@@ -61,6 +61,11 @@ namespace WeMo_Switch
             
         }
 
+        private void txtResults_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
        
     }
 }
