@@ -17,3 +17,4 @@ E:\Code\GITHUB\WeMoController\WeMo Switch\WeMo Switch\obj\Debug\WeMo_Switch.Star
 E:\Code\GITHUB\WeMoController\WeMo Switch\WeMo Switch\obj\Debug\WeMo Switch.csproj.GenerateResource.Cache
 E:\Code\GITHUB\WeMoController\WeMo Switch\WeMo Switch\obj\Debug\WeMo Switch.exe
 E:\Code\GITHUB\WeMoController\WeMo Switch\WeMo Switch\obj\Debug\WeMo Switch.pdb
+E:\Code\GITHUB\WeMoController\WeMo Switch\WeMo Switch\obj\Debug\WeMo Switch.csprojResolveAssemblyReference.cache
