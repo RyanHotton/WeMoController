@@ -26,7 +26,8 @@ namespace WeMo_Switch
 
         public ControllerForm(string ipAddr)
         {
-            InitializeComponent(); 
+            InitializeComponent();
+            lblVersion.Text = Program.devVersion;
             myWeMo.setBaseURL(ipAddr);
             try
             {

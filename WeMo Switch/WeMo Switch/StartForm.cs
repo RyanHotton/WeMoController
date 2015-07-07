@@ -18,7 +18,8 @@ namespace WeMo_Switch
         public StartForm()
         {
             InitializeComponent();
-            txtIPAddr.Text = "192.168.2.28";
+            lblVersion.Text = Program.devVersion;
+            txtIPAddr.Text = "192.168.2.36";    // test IP
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)

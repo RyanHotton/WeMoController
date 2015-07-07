@@ -35,13 +35,14 @@
             this.btnRefresh = new System.Windows.Forms.Button();
             this.txtResults = new System.Windows.Forms.TextBox();
             this.progFind = new System.Windows.Forms.ProgressBar();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(267, 40);
             this.label1.TabIndex = 0;
@@ -98,12 +99,21 @@
             this.progFind.Size = new System.Drawing.Size(256, 23);
             this.progFind.TabIndex = 5;
             // 
+            // lblVersion
+            // 
+            this.lblVersion.Location = new System.Drawing.Point(255, 0);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(33, 13);
+            this.lblVersion.TabIndex = 9;
+            this.lblVersion.Text = "v0.1";
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 374);
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.progFind);
             this.Controls.Add(this.txtResults);
             this.Controls.Add(this.btnRefresh);
@@ -134,5 +144,6 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.TextBox txtResults;
         private System.Windows.Forms.ProgressBar progFind;
+        private System.Windows.Forms.Label lblVersion;
     }
 }

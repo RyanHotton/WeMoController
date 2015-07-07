@@ -21,8 +21,10 @@ namespace WeMo_Switch.Classes
         private const string COMMAND_ON = @"<?xml version=""1.0"" encoding=""utf-8""?><s:Envelope xmlns:s=""http://schemas.xmlsoap.org/soap/envelope/"" s:encodingStyle=""http://schemas.xmlsoap.org/soap/encoding/""><s:Body><u:SetBinaryState xmlns:u=""urn:Belkin:service:basicevent:1""><BinaryState>1</BinaryState></u:SetBinaryState></s:Body></s:Envelope>";
         private const string COMMAND_GET = @"<?xml version=""1.0"" encoding=""utf-8""?><s:Envelope xmlns:s=""http://schemas.xmlsoap.org/soap/envelope/"" s:encodingStyle=""http://schemas.xmlsoap.org/soap/encoding/""><s:Body><u:GetBinaryState xmlns:u=""urn:Belkin:service:basicevent:1""></u:GetBinaryState></s:Body></s:Envelope>";
         private const string port = "49153";              // typical port
-        private string baseURL = "192.168.2.28";    // your WeMo IP
+        private string baseURL = "192.168.2.36";    // your WeMo IP
         private string WeMo_Status;
+
+        // for the future http://192.168.2.36:49153/setup.xml
 
         /*
          * CONSTRUCTOR 

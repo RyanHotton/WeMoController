@@ -36,16 +36,21 @@
             this.lblStatus = new System.Windows.Forms.Label();
             this.picIcon = new System.Windows.Forms.PictureBox();
             this.chkDisable = new System.Windows.Forms.CheckBox();
+            this.gpBoxInfo = new System.Windows.Forms.GroupBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblWeMoName = new System.Windows.Forms.Label();
+            this.lblVersion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
+            this.gpBoxInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOn
             // 
             this.btnOn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnOn.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOn.Location = new System.Drawing.Point(12, 115);
+            this.btnOn.Location = new System.Drawing.Point(12, 228);
             this.btnOn.Name = "btnOn";
-            this.btnOn.Size = new System.Drawing.Size(260, 113);
+            this.btnOn.Size = new System.Drawing.Size(120, 120);
             this.btnOn.TabIndex = 0;
             this.btnOn.Text = "ON";
             this.btnOn.UseVisualStyleBackColor = true;
@@ -55,9 +60,9 @@
             // 
             this.btnOff.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnOff.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOff.Location = new System.Drawing.Point(12, 234);
+            this.btnOff.Location = new System.Drawing.Point(155, 228);
             this.btnOff.Name = "btnOff";
-            this.btnOff.Size = new System.Drawing.Size(260, 113);
+            this.btnOff.Size = new System.Drawing.Size(120, 120);
             this.btnOff.TabIndex = 1;
             this.btnOff.Text = "OFF";
             this.btnOff.UseMnemonic = false;
@@ -116,12 +121,53 @@
             this.chkDisable.UseVisualStyleBackColor = true;
             this.chkDisable.CheckedChanged += new System.EventHandler(this.chkDisable_CheckedChanged);
             // 
+            // gpBoxInfo
+            // 
+            this.gpBoxInfo.BackColor = System.Drawing.Color.White;
+            this.gpBoxInfo.Controls.Add(this.lblWeMoName);
+            this.gpBoxInfo.Controls.Add(this.lblName);
+            this.gpBoxInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpBoxInfo.Location = new System.Drawing.Point(12, 116);
+            this.gpBoxInfo.Name = "gpBoxInfo";
+            this.gpBoxInfo.Size = new System.Drawing.Size(260, 100);
+            this.gpBoxInfo.TabIndex = 7;
+            this.gpBoxInfo.TabStop = false;
+            this.gpBoxInfo.Text = "Info";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(6, 22);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(105, 16);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "WeMo Name: ";
+            // 
+            // lblWeMoName
+            // 
+            this.lblWeMoName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeMoName.Location = new System.Drawing.Point(117, 22);
+            this.lblWeMoName.Name = "lblWeMoName";
+            this.lblWeMoName.Size = new System.Drawing.Size(130, 23);
+            this.lblWeMoName.TabIndex = 1;
+            this.lblWeMoName.Text = "WeMo Switch";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.Location = new System.Drawing.Point(253, 0);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(33, 13);
+            this.lblVersion.TabIndex = 8;
+            this.lblVersion.Text = "v0.1";
+            // 
             // ControllerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(284, 360);
+            this.Controls.Add(this.lblVersion);
+            this.Controls.Add(this.gpBoxInfo);
             this.Controls.Add(this.chkDisable);
             this.Controls.Add(this.picIcon);
             this.Controls.Add(this.lblStatus);
@@ -137,6 +183,8 @@
             this.Text = "WeMo Controller";
             this.Load += new System.EventHandler(this.ControllerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
+            this.gpBoxInfo.ResumeLayout(false);
+            this.gpBoxInfo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,6 +199,10 @@
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.PictureBox picIcon;
         private System.Windows.Forms.CheckBox chkDisable;
+        private System.Windows.Forms.GroupBox gpBoxInfo;
+        private System.Windows.Forms.Label lblWeMoName;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
 
