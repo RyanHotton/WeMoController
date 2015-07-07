@@ -70,12 +70,13 @@
             // 
             // btnRefresh
             // 
+            this.btnRefresh.Enabled = false;
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Location = new System.Drawing.Point(12, 109);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(256, 23);
             this.btnRefresh.TabIndex = 3;
-            this.btnRefresh.Text = "Refresh [Prototype] - SUPER SLOW!";
+            this.btnRefresh.Text = "Refresh [Prototype] ";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
