@@ -34,6 +34,7 @@ namespace WeMo_Switch
                 myWeMo.getWeMoIcon(ref picIcon);
                 lblStatus.Text = myWeMo.getStatus(ref btnOff, ref btnOn);
                 InitTimer();
+                defaultButtons();
             }
             catch
             {
@@ -65,17 +66,24 @@ namespace WeMo_Switch
 
         private void Timer_Status_Tick(object sender, EventArgs e)
         {
-            disableButtons();
+            defaultButtons();
             Console.WriteLine("WeMo Status: " + myWeMo.getWeMo_Status());
         }
 
-        private void disableButtons()
+        private void defaultButtons()
         {
             lblStatus.Text = myWeMo.getStatus(ref btnOff, ref btnOn);
-            if (disableBool)
+            if (!disableBool)
             {
-                btnOff.Enabled = false;
-                btnOn.Enabled = false;
+                btnOff.Visible = false;
+                btnOn.Visible = false;
+                btnToggle.Visible = true;
+            }
+            else
+            {
+                btnOff.Visible = true;
+                btnOn.Visible = true;
+                btnToggle.Visible = false;
             }
         }
 
@@ -84,10 +92,28 @@ namespace WeMo_Switch
             
         }
 
-        private void chkDisable_CheckedChanged(object sender, EventArgs e)
+        private void chkDefaultBtn_CheckedChanged(object sender, EventArgs e)
         {
-            disableBool = chkDisable.Checked;
-            disableButtons();
+            disableBool = chkDefaultBtn.Checked;
+            defaultButtons();
+        }
+
+        private void btnToggle_Click(object sender, EventArgs e)
+        {
+            string tmpStatus = myWeMo.getStatus(ref btnOff, ref btnOn);
+            switch (tmpStatus)  // toggle the WeMo device ON <-> OFF 
+            {
+                case "OFF":
+                    myWeMo.SendPowerCommand(myWeMo.getCommandOn());
+                    break;
+                case "ON":
+                    myWeMo.SendPowerCommand(myWeMo.getCommandOff());
+                    break;
+                default:
+                    Console.WriteLine(tmpStatus + " - Toggle not working...");
+                    break;
+            }
+            lblStatus.Text = tmpStatus;
         }
 
     }

@@ -35,11 +35,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.picIcon = new System.Windows.Forms.PictureBox();
-            this.chkDisable = new System.Windows.Forms.CheckBox();
+            this.chkDefaultBtn = new System.Windows.Forms.CheckBox();
             this.gpBoxInfo = new System.Windows.Forms.GroupBox();
-            this.lblName = new System.Windows.Forms.Label();
             this.lblWeMoName = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
+            this.btnToggle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.gpBoxInfo.SuspendLayout();
             this.SuspendLayout();
@@ -110,16 +111,17 @@
             this.picIcon.TabIndex = 5;
             this.picIcon.TabStop = false;
             // 
-            // chkDisable
+            // chkDefaultBtn
             // 
-            this.chkDisable.AutoSize = true;
-            this.chkDisable.Location = new System.Drawing.Point(12, 92);
-            this.chkDisable.Name = "chkDisable";
-            this.chkDisable.Size = new System.Drawing.Size(61, 17);
-            this.chkDisable.TabIndex = 6;
-            this.chkDisable.Text = "Disable";
-            this.chkDisable.UseVisualStyleBackColor = true;
-            this.chkDisable.CheckedChanged += new System.EventHandler(this.chkDisable_CheckedChanged);
+            this.chkDefaultBtn.AutoSize = true;
+            this.chkDefaultBtn.Location = new System.Drawing.Point(12, 92);
+            this.chkDefaultBtn.Name = "chkDefaultBtn";
+            this.chkDefaultBtn.Size = new System.Drawing.Size(99, 17);
+            this.chkDefaultBtn.TabIndex = 6;
+            this.chkDefaultBtn.Text = "Default Buttons";
+            this.chkDefaultBtn.UseMnemonic = false;
+            this.chkDefaultBtn.UseVisualStyleBackColor = true;
+            this.chkDefaultBtn.CheckedChanged += new System.EventHandler(this.chkDefaultBtn_CheckedChanged);
             // 
             // gpBoxInfo
             // 
@@ -134,15 +136,6 @@
             this.gpBoxInfo.TabStop = false;
             this.gpBoxInfo.Text = "Info";
             // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(6, 22);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(105, 16);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "WeMo Name: ";
-            // 
             // lblWeMoName
             // 
             this.lblWeMoName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -152,6 +145,15 @@
             this.lblWeMoName.TabIndex = 1;
             this.lblWeMoName.Text = "WeMo Switch";
             // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(6, 22);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(105, 16);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "WeMo Name: ";
+            // 
             // lblVersion
             // 
             this.lblVersion.Location = new System.Drawing.Point(253, 0);
@@ -160,15 +162,28 @@
             this.lblVersion.TabIndex = 8;
             this.lblVersion.Text = "v0.1";
             // 
+            // btnToggle
+            // 
+            this.btnToggle.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnToggle.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToggle.Location = new System.Drawing.Point(12, 228);
+            this.btnToggle.Name = "btnToggle";
+            this.btnToggle.Size = new System.Drawing.Size(263, 120);
+            this.btnToggle.TabIndex = 9;
+            this.btnToggle.Text = "TOGGLE";
+            this.btnToggle.UseVisualStyleBackColor = true;
+            this.btnToggle.Click += new System.EventHandler(this.btnToggle_Click);
+            // 
             // ControllerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(284, 360);
+            this.Controls.Add(this.btnToggle);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.gpBoxInfo);
-            this.Controls.Add(this.chkDisable);
+            this.Controls.Add(this.chkDefaultBtn);
             this.Controls.Add(this.picIcon);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label2);
@@ -198,11 +213,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.PictureBox picIcon;
-        private System.Windows.Forms.CheckBox chkDisable;
+        private System.Windows.Forms.CheckBox chkDefaultBtn;
         private System.Windows.Forms.GroupBox gpBoxInfo;
         private System.Windows.Forms.Label lblWeMoName;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblVersion;
+        private System.Windows.Forms.Button btnToggle;
     }
 }
 
