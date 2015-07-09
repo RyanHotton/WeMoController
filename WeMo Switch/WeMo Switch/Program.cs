@@ -12,7 +12,7 @@ namespace WeMo_Switch
         /// The main entry point for the application.
         /// </summary>
         /// 
-        public static string devVersion = "v0.1"; 
+        public static string devVersion = "v0.2"; 
         [STAThread]
         static void Main()
         {
