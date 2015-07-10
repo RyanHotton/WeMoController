@@ -113,7 +113,7 @@ namespace WeMo_Switch
                     Console.WriteLine(tmpStatus + " - Toggle not working...");
                     break;
             }
-            lblStatus.Text = tmpStatus;
+            lblStatus.Text = myWeMo.getStatus(ref btnOff, ref btnOn);
         }
 
     }
