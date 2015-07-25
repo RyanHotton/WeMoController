@@ -114,6 +114,10 @@ namespace WeMo_Switch
                     break;
             }
             lblStatus.Text = myWeMo.getStatus(ref btnOff, ref btnOn);
+
+
+            // testing WeMo - GetInfo
+            //MessageBox.Show("Info Retrieved: " + myWeMo.getWeMoInfo());
         }
 
     }

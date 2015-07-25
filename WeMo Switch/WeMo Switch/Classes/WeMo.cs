@@ -122,6 +122,13 @@ namespace WeMo_Switch.Classes
          *  All the Getters for the WeMo class
         */
 
+        // To retrieve the setup.xml for more information about the WeMo device
+        public string getWeMoInfo()
+        {
+            string targetUrl = "http://" + this.baseURL + ":" + port + "/setup.xml";
+            return targetUrl;
+        }
+
         public string getStatus(ref Button btnOff, ref Button btnOn)
         {
             //
