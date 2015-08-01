@@ -23,5 +23,6 @@ Video Source: https://youtu.be/ifzmJFdvNEE
 Contact information will be posted in the future.
 
 ##### Team:
-Ryan - (LordArsenic)
+LordArsenic
+Beaniot
 
