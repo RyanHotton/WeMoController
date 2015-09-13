@@ -5,7 +5,13 @@ Currently this is a simple prototype.
 
 ## Instructions:
 1. Enter a the WeMo Switch's IP Address
-2. Click ON or OFF.
+2a. Click ON or OFF buttons.
+2b. Click the TOGGLE button.
+
+### Present status:
+- Looking into cross platform, may recreate the current state of the project into another language.
+- Figuring out device locator.
+- Expect delays as this is a personal project and the team on this project are students.
 
 ### Future:
 To integrate searching of for WeMo devices.
