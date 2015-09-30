@@ -1,3 +1,5 @@
+import os
+
 # sources:
 # http://cmikavac.net/2011/09/11/how-to-generate-an-ip-range-list-in-python/
 def ipRange(start_ip, end_ip):
@@ -16,7 +18,13 @@ def ipRange(start_ip, end_ip):
       ip_range.append(".".join(map(str, temp)))    
       
    return ip_range
-   
+
+def isValidIP(hostname):
+   response = os.system("ping -c 1 " + hostname)
+   if response == 0:
+     print hostname, 'is up!'
+   else:
+     print hostname, 'is down!'  
    
 # sample usage 
 start_ip = "192.168.1.0"
@@ -26,4 +34,5 @@ count = 0
 for ip in ip_range:
    #print(ip)
    count += 1
+   #isValidIP(ip)
 print(count)
