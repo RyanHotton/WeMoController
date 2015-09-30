@@ -2,6 +2,12 @@
 This Application is designed to work with a Belkin WeMo Switch.
 Currently this is a simple prototype.
 
+# UPDATE - We are switching to another language for cross-platform compatibility.
+### Possible languages are:
+- Java
+- Python
+
+## We will create a new branch when we launch to another language. Also the simple On-Off application with C# will still remain on GitHub and may be returned to in a later future.
 
 ## Instructions:
 - 1. Enter a the WeMo Switch's IP Address
@@ -31,4 +37,5 @@ Contact information will be posted in the future.
 ##### Team:
 - LordArsenic
 - Beaniot
+- melonzilla
 
