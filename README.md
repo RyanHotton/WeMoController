@@ -6,8 +6,7 @@ Currently this is a simple prototype.
 ### Possible languages are:
 - Java
 - Python
-
-## We will create a new branch when we launch to another language. Also the simple On-Off application with C# will still remain on GitHub and may be returned to in a later future.
+### New Branch created WeMoControllerV2
 
 ## Instructions:
 - 1. Enter a the WeMo Switch's IP Address
