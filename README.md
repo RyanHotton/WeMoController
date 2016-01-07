@@ -1,12 +1,14 @@
 # WeMoController
 This Application is designed to work with a Belkin WeMo Switch.
 Currently this is a simple prototype.
+### New Branch created WeMoControllerV2
+### Project has been delayed...until further notice
 
 # UPDATE - We are switching to another language for cross-platform compatibility.
 ### Possible languages are:
 - Java
 - Python
-### New Branch created WeMoControllerV2
+
 
 ## Instructions:
 - 1. Enter a the WeMo Switch's IP Address
