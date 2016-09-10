@@ -36,7 +36,7 @@ Currently this is a simple prototype.
 Contact information will be posted in the future.
 
 ##### Team:
-- LordArsenic
+- RyanHotton ( used to be called "LordArsenic" )
 - Beaniot
 - melonzilla
 
