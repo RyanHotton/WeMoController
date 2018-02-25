@@ -2,7 +2,7 @@
 This Application is designed to work with a Belkin WeMo Switch.
 Currently this is a simple prototype.
 ### New Branch created WeMoControllerV2
-### Project has been delayed...until further notice
+
 
 # UPDATE - We are switching to another language for cross-platform compatibility.
 ### Possible languages are:
@@ -11,9 +11,8 @@ Currently this is a simple prototype.
 
 
 ## Instructions:
-- 1. Enter a the WeMo Switch's IP Address
-- 2a. Click ON or OFF buttons.
-- 2b. Click the TOGGLE button.
+- Enter a the WeMo Switch's IP Address
+- Click ON or OFF buttons or click the TOGGLE button.
 
 ### Present status:
 - Looking into cross platform, may recreate the current state of the project into another language.
@@ -36,7 +35,6 @@ Currently this is a simple prototype.
 Contact information will be posted in the future.
 
 ##### Team:
-- RyanHotton ( used to be called "LordArsenic" )
+- RyanHotton
 - Beaniot
-- melonzilla
 
