@@ -1,42 +1,18 @@
 ## WeMoController ##
 ----------
 
-This Application is designed to work with a Belkin WeMo Switch.
-Currently this is a simple prototype.
-### New Branch created WeMoControllerV2 ###
+### History: ###
+This application first started as a fun C# application (inspired by this [video](https://youtu.be/ifzmJFdvNEE)). I wanted to make a desktop application to control your Belkin WeMo Switches, instead of pulling out your phone and using the command line. 
 
+After making a working version that required the user to input the desired WeMo's IP address and toggle the switch On/Off, I decided to put the project on hold and focus on school and work. The intention was to always finish this project in C#, but I started to use Windows 7 (at the time) less and less and I started using MacOS and Linux distros. With C# (at the time) not being that popular on other operating systems I decided to work look at different avenues. 
 
-### UPDATE - We are switching to another language for cross-platform compatibility. ###
-### Possible languages are: ###
-- Java
-- Python
+The goal with the new application is to be cross-platform. My current plan is to change the application from a desktop application to a web application (via localhost). Please note that I may change my mind and go back to a desktop application.
 
+## Roadmap: ##
+- Choose either Python 3 or Node.js
+- Get the basic SOAP communication working with IP addresses (equivalent to the original C# application)
+- Allow the application to fetch the Belkin WeMo Switches dynamically (a feature that was never completed in C#)
+- TBD
 
-### Instructions: ###
-- Enter a the WeMo Switch's IP Address
-- Click ON or OFF buttons or click the TOGGLE button.
-
-### Present status: ###
-- Looking into cross platform, may recreate the current state of the project into another language.
-- Figuring out device locator.
-- Expect delays as this is a personal project and the team on this project are students.
-
-### Future: ###
-- To integrate searching of for WeMo devices.
-- Cross Platform.
-- Better UI.
-- Faster.
-- More ideas to come.
-
-### Inspiration: ###
-- This program was inspired by Barnacules Nerdgasm's code and video on how to control a Belkin WeMo switch to control his modem.
-- We used the ON and OFF command sending code. May use his library in the future, but we will probably design that ourselves.
-- Video Source: https://youtu.be/ifzmJFdvNEE
-
-### Contact: ###
-Contact information will be posted in the future.
-
-### Team: ###
+### Current Team: ###
 - [RyanHotton](https://github.com/RyanHotton)
-- [BenoitCourville](https://github.com/BenoitCourville)
-
