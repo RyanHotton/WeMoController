@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>WeMo Controller</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- App Title -->
+        <div class="row">
+            <div class="col">
+                <h4 class="app-title">WeMo Controller</h4>
+            </div>
+        </div>
+        <!-- WeMo Info -->
+        <div class="row">
+            <!-- WeMo Device Name -->
+            <div class="col">
+                <p>WeMo 1</p>
+            </div>
+            <!-- WeMo Picture -->
+            <div class="col">
+                <div class="wemo-icon"></div>
+            </div>
+        </div>
+        <br />
+        <!-- Toggle Button -->
+        <div class="row">
+            <div class="col">
+                <!-- On/Off Button (Toggle) -->
+                <button type="button" class="btn btn-success btn-toggle-wemo">On</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/toggle.js"></script>
+</body>
+</html>

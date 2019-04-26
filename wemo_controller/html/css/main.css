@@ -1,0 +1,46 @@
+/* 
+    Default Body Style - "Dark Mode"
+*/
+body {
+    background-color: #181818;
+    color: #ffffff !important;
+}
+
+/* 
+    Line Break
+*/
+hr {
+    color: white;
+}
+
+/* 
+    App Title - Header
+*/
+h1.app-title, h2.app-title, h3.app-title, h4.app-title, h5.app-title  {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* 
+    WeMo Toggle Button
+*/
+button.btn-toggle-wemo {
+    width: 100%;
+    height: 200px;
+    font-size: 32px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* 
+    WeMo Icon
+*/
+div.wemo-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background: url('../img/wemoDefaultIcon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
