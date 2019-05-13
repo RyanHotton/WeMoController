@@ -7,11 +7,10 @@
 // get dependecies
 const path = require('path')
 const url = require('url')
-const soap = require('soap')
 const { app, BrowserWindow, ipcMain } = require('electron')
 
-// get utils
-const { getDefaultWeMoIP } = require('./wemo_config')
+// get defaults
+const { getDefaultWeMoIP } = require('./src/defaults/wemo_config')
 
 // TODO: Connect to WeMo IP
 var wemo_ip = getDefaultWeMoIP()
@@ -22,7 +21,7 @@ let win
 
 const createWindow = () => {
     // Create the browser window.
-    win = new BrowserWindow({ width: 300, height: 350, resizable: false })
+    win = new BrowserWindow({ width: 350, height: 500, resizable: false })
 
     // and load the index.html of the app.
     win.loadFile(path.join(__dirname, './html/toggle.html'))

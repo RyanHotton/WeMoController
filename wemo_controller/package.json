@@ -5,23 +5,24 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "nodemon --exec \"electron .\" -e js,html",
-    "bundle": "browserify --ignore-missing --no-builtins --no-commondir --insert-global-vars=\"global\" --no-browser-field main.js > main.bundle.js",
-    "package-macos": "electron-packager ./ --ignore=\"(^(/main.js)$||node_modules/)\" --platform=darwin --arch=x64 --overwrite --out build/"
+    "dev": "nodemon --exec \"electron .\" -e js,html,css"
   },
   "author": "Ryan Hotton",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "electron": "^5.0.0",
     "jquery": "^3.4.0",
-    "popper.js": "^1.15.0",
-    "soap": "^0.27.1"
+    "lodash": "^4.17.11",
+    "materialize-css": "^1.0.0-rc.2",
+    "vue": "^2.6.10",
+    "wemo-client": "^0.15.0"
   },
   "devDependencies": {
     "browserify": "^16.2.3",
-    "electron-packager": "^13.1.1",
-    "nodemon": "^1.18.11",
-    "uglify-js": "^3.5.8"
+    "nodemon": "^1.18.11"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.min.js",
+    "materialize": "./node_modules/materialize-css/dist/js/materialize.min.js"
   }
 }

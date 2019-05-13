@@ -1,7 +1,7 @@
 /*
     [App] WeMo Controller
     [Author] Ryan Hotton
-    [Script] src/utils/defaults/wemo.js
+    [Script] src/defaults/wemo_config.js
 */
 
 // Default WeMo IP

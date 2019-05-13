@@ -4,6 +4,28 @@
 body {
     background-color: #181818;
     color: #ffffff !important;
+    overflow: hidden !important;
+}
+
+/* 
+    Containers, Rows and Columns
+*/
+div.row {
+    margin-bottom: 5px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+div.row div.col {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* 
+    Hide Override
+*/
+.rdhidden {
+    display: none !important;
 }
 
 /* 
@@ -16,14 +38,30 @@ hr {
 /* 
     App Title - Header
 */
-h1.app-title, h2.app-title, h3.app-title, h4.app-title, h5.app-title  {
+h1.app-title, h2.app-title, h3.app-title, h4.app-title, h5.app-title, h6.app-title  {
     text-align: center;
     text-transform: uppercase;
 }
 
 /* 
+    Tabs
+*/
+ul.tabs {
+    background: transparent;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* 
     WeMo Toggle Button
 */
+div.row-button > div.col.s12 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 button.btn-toggle-wemo {
     width: 100%;
     height: 200px;
@@ -32,15 +70,36 @@ button.btn-toggle-wemo {
     text-transform: uppercase;
 }
 
+button.btn-toggle-wemo.btn-floating.btn-large {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
 /* 
     WeMo Icon
 */
 div.wemo-icon {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     margin: 0 auto;
     background: url('../img/wemoDefaultIcon.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* 
+    Footer
+*/
+footer.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
 }

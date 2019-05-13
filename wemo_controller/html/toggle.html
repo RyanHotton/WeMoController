@@ -3,44 +3,111 @@
 <head>
     <meta charset="UTF-8"/>
     <title>WeMo Controller</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"/>
     <!-- Local CSS -->
     <link rel="stylesheet" href="./css/main.css">
-
-    <!-- jQuery -->
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <!-- Main Container -->
+    <div id="main-container" class="container rdhidden">
         <!-- App Title -->
         <div class="row">
-            <div class="col">
-                <h4 class="app-title">WeMo Controller</h4>
+            <div class="col s12">
+                <h5 class="app-title">WeMo Controller</h5>
             </div>
         </div>
-        <!-- WeMo Info -->
+        <!-- Tabs -->
         <div class="row">
-            <!-- WeMo Device Name -->
-            <div class="col">
-                <p>WeMo 1</p>
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a class="active" href="#wemo1">1</a></li>
+                    <li class="tab col s3"><a href="#wemo2">2</a></li>
+                    <li class="tab col s3"><a href="#wemo3">3</a></li>
             </div>
-            <!-- WeMo Picture -->
-            <div class="col">
-                <div class="wemo-icon"></div>
+            <div id="wemo1" class="col s12">
+                <!-- WeMo Info -->
+                <div class="row">
+                    <!-- WeMo Device Name -->
+                    <div class="col s6">
+                        <p class="flow-text">WeMo 1</p>
+                    </div>
+                    <!-- WeMo Picture -->
+                    <div class="col s6">
+                        <div class="wemo-icon"></div>
+                    </div>
+                </div>
+                <br />
+                <!-- Toggle Button -->
+                <div class="row row-button">
+                    <div class="col s12">
+                        <!-- On/Off Button (Toggle) -->
+                        <button type="button"
+                            class="btn-toggle-wemo btn-floating waves-effect waves-light btn-large #43a047 green darken-1">On</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <br />
-        <!-- Toggle Button -->
-        <div class="row">
-            <div class="col">
-                <!-- On/Off Button (Toggle) -->
-                <button type="button" class="btn btn-success btn-toggle-wemo">On</button>
+            <div id="wemo2" class="col s12">
+                <!-- WeMo Info -->
+                <div class="row">
+                    <!-- WeMo Device Name -->
+                    <div class="col s6">
+                        <p class="flow-text">WeMo 2</p>
+                    </div>
+                    <!-- WeMo Picture -->
+                    <div class="col s6">
+                        <div class="wemo-icon"></div>
+                    </div>
+                </div>
+                <br />
+                <!-- Toggle Button -->
+                <div class="row row-button">
+                    <div class="col s12">
+                        <!-- On/Off Button (Toggle) -->
+                        <button type="button"
+                            class="btn-toggle-wemo btn-floating waves-effect waves-light btn-large #43a047 green darken-1">On</button>
+                    </div>
+                </div>
+            </div>
+            <div id="wemo3" class="col s12">
+                <!-- WeMo Info -->
+                <div class="row">
+                    <!-- WeMo Device Name -->
+                    <div class="col s6">
+                        <p class="flow-text">WeMo 3</p>
+                    </div>
+                    <!-- WeMo Picture -->
+                    <div class="col s6">
+                        <div class="wemo-icon"></div>
+                    </div>
+                </div>
+                <br />
+                <!-- Toggle Button -->
+                <div class="row row-button">
+                    <div class="col s12">
+                        <!-- On/Off Button (Toggle) -->
+                        <button type="button"
+                            class="btn-toggle-wemo btn-floating waves-effect waves-light btn-large #43a047 green darken-1">On</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                © <span class="copyright-year">2019</span> Ryan Hotton
+            </div>
+        </div>
+    </footer>
+    <!-- ------------------------------------------------------------------------- -->
+    <!-- jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <!-- Scripts -->
     <script src="./js/toggle.js"></script>
+    <!-- <script src="../dist/bundle.js"></script> -->
 </body>
 </html>
